@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginWithAnimation" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8xTDv4L08DmEbqZwGhQ-yqJdo7mS0b-A" />
+
+        <activity
+            android:name=".view.screen.storymaplocation.StoryMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_story_maps_location" />
+
+        <receiver
+            android:name=".widget.StoryWidget"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/story_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.StackWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.screen.main.addstory.AddStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.screen.main.detail.DetailStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.screen.welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.screen.auth.register.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.screen.auth.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.screen.main.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
