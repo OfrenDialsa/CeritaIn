@@ -27,9 +27,9 @@ import com.dicoding.picodiploma.loginwithanimation.R
 import com.dicoding.picodiploma.loginwithanimation.data.Result
 import com.dicoding.picodiploma.loginwithanimation.data.remote.response.StoryUploadResponse
 import com.dicoding.picodiploma.loginwithanimation.databinding.ActivityAddStoryBinding
-import com.dicoding.picodiploma.loginwithanimation.getImageUri
-import com.dicoding.picodiploma.loginwithanimation.reduceFileImage
-import com.dicoding.picodiploma.loginwithanimation.uriToFile
+import com.dicoding.picodiploma.loginwithanimation.util.getImageUri
+import com.dicoding.picodiploma.loginwithanimation.util.reduceFileImage
+import com.dicoding.picodiploma.loginwithanimation.util.uriToFile
 import com.dicoding.picodiploma.loginwithanimation.view.ViewModelFactory
 import com.dicoding.picodiploma.loginwithanimation.view.screen.main.MainActivity
 import com.dicoding.picodiploma.loginwithanimation.view.screen.main.MainViewModel
@@ -37,7 +37,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.asRequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 

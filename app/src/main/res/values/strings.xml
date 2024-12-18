@@ -31,11 +31,8 @@
     <string name="cancel">Batal</string>
     <string name="permission_required">Aplikasi belum mendapatkan izin</string>
     <string name="getting_worldwide_stories">Mencari Cerita....</string>
-    <string name="successfully_get_worldwide_stories">Berhasil mendapatkan cerita</string>
     <string name="style_parsing_failed">Parsing failed</string>
     <string name="cannot_find_style_map">cannot find style map</string>
-    <string name="viewing_story">Menampilkan cerita dari %1$s</string>
     <string name="send_loc">Kirimkan lokasi</string>
-    <string name="unexpected_error">Unexpected Error</string>
     <string name="try_again">Coba lagi</string>
 </resources>

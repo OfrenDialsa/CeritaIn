@@ -6,7 +6,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.dicoding.picodiploma.loginwithanimation.data.local.entity.Story
-import com.dicoding.picodiploma.loginwithanimation.data.remote.response.ListStoryItem
 
 @Dao
 interface StoryDao {

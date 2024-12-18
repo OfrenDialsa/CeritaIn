@@ -14,7 +14,6 @@ import com.bumptech.glide.request.target.Target
 import com.dicoding.picodiploma.loginwithanimation.R
 import com.dicoding.picodiploma.loginwithanimation.data.StoryRepository
 import com.dicoding.picodiploma.loginwithanimation.data.local.entity.Story
-import com.dicoding.picodiploma.loginwithanimation.data.remote.response.ListStoryItem
 import kotlinx.coroutines.*
 
 internal class StackRemoteViewsFactory(

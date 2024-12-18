@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.view
+package com.dicoding.picodiploma.loginwithanimation.view.component
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -13,8 +13,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.picodiploma.loginwithanimation.data.Result
-import com.dicoding.picodiploma.loginwithanimation.view.screen.customview.PasswordEditText
-import com.dicoding.picodiploma.loginwithanimation.view.screen.customview.EmailEditText
 import com.dicoding.picodiploma.loginwithanimation.databinding.ActivitySignupBinding
 import com.dicoding.picodiploma.loginwithanimation.view.ViewModelFactory
 import com.dicoding.picodiploma.loginwithanimation.view.screen.auth.login.LoginActivity

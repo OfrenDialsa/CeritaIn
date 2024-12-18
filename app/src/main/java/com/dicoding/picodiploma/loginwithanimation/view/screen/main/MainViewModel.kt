@@ -51,4 +51,5 @@ class MainViewModel(
     fun setCurrentImageUri(uri: Uri?) {
         _currentImageUri.value = uri
     }
+
 }

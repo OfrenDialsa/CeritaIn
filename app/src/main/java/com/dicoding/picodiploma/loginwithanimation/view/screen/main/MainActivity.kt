@@ -16,14 +16,11 @@ import com.dicoding.picodiploma.loginwithanimation.R
 import com.dicoding.picodiploma.loginwithanimation.databinding.ActivityMainBinding
 import com.dicoding.picodiploma.loginwithanimation.view.ViewModelFactory
 import android.Manifest
-import androidx.lifecycle.lifecycleScope
-import com.dicoding.picodiploma.loginwithanimation.view.LoadingAdapter
-import com.dicoding.picodiploma.loginwithanimation.view.StoryPagingAdapter
+import com.dicoding.picodiploma.loginwithanimation.view.component.LoadingAdapter
+import com.dicoding.picodiploma.loginwithanimation.view.component.StoryPagingAdapter
 import com.dicoding.picodiploma.loginwithanimation.view.screen.main.addstory.AddStoryActivity
 import com.dicoding.picodiploma.loginwithanimation.view.screen.storymaplocation.StoryMapsActivity
 import com.dicoding.picodiploma.loginwithanimation.view.screen.welcome.WelcomeActivity
-import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 

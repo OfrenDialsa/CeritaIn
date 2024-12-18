@@ -9,14 +9,11 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
 import com.dicoding.picodiploma.loginwithanimation.data.local.entity.Story
-import com.dicoding.picodiploma.loginwithanimation.data.local.pref.UserPreferences
 import com.dicoding.picodiploma.loginwithanimation.data.local.room.StoryDatabase
-import com.dicoding.picodiploma.loginwithanimation.data.remote.response.ListStoryItem
 import com.dicoding.picodiploma.loginwithanimation.data.remote.response.StoryResponse
 import com.dicoding.picodiploma.loginwithanimation.data.remote.response.StoryUploadResponse
 import com.dicoding.picodiploma.loginwithanimation.data.remote.retrofit.ApiService
 import com.google.gson.Gson
-import kotlinx.coroutines.flow.Flow
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.HttpException

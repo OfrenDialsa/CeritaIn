@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation
+package com.dicoding.picodiploma.loginwithanimation.util
 
 import android.content.ContentValues
 import android.content.Context
@@ -11,6 +11,7 @@ import android.os.Environment
 import android.provider.MediaStore
 import androidx.core.content.FileProvider
 import androidx.exifinterface.media.ExifInterface
+import com.dicoding.picodiploma.loginwithanimation.BuildConfig
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -22,8 +23,6 @@ import java.util.Locale
 private const val FILENAME_FORMAT = "yyyyMMdd_HHmmss"
 private val timeStamp: String = SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(Date())
 private const val MAXIMAL_SIZE = 1000000
-const val TWO_SECONDS: Long = 2000
-const val ONE_SECOND: Long = 1000
 
 fun getImageUri(context: Context): Uri {
     var uri: Uri? = null
